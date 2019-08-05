@@ -1,31 +1,101 @@
 @import 'fonts'
-@import 'page_settings'
 @import 'grid'
 
 /* Fonts settings */
 
-@mixin font-big-john
-  font-family: 'Big John'
-@mixin font-sans-pro
-  font-family: 'Source Sans Pro'
-  font-weight: 300;
-  font-style: normal;
-@mixin font-sans-pro-italic
-  font-family: 'Source Sans Pro'
-  font-weight: 300;
-  font-style: italic;
 
-@mixin font-open-sans
-  font-family: 'Open Sans'
-  font-weight: 400;
-  font-style: normal;
-
-@mixin font-open-sans-bold
-  font-family: 'Open Sans'
-  font-weight: 700;
-  font-style: normal;
 
   
-    
+/* Page styles */
+.container
+  //border: 1px solid green
 
-  
+.main
+  background: #ffffff url(../img/main/main-bg.jpg) no-repeat top center
+  height: 751px   
+ 
+  & .container
+    display: flex
+    flex-direction: column
+    align-content: space-between   
+    height: 100%  
+  &-header
+    display: flex   
+    align-items: center
+    padding-top: 39px    
+    &-logo
+      display: flex      
+      flex: 1      
+      &__text       
+        color: #ffffff
+        +font-big-john
+        font-size: 25px        
+    &-nav
+      //border: 1px solid red
+      display: flex
+      flex: 1     
+      &-menu
+        display: flex
+        flex-direction: row
+        justify-content: space-between        
+        &__item
+          
+        &__link
+          color: #ffffff          
+          +font-open-sans
+          font-size: 16px
+          text-decoration: none
+          border: 1px solid transparent
+          padding: 5px 19px  
+          outline: none          
+          &:hover          
+            opacity: 0.7 
+            border: 1px solid #ffffff
+            border-radius: 25px 25px 25px 25px         
+          &--active             
+            border: 1px solid #ffffff
+            border-radius: 25px 25px 25px 25px
+            
+  &-content
+    display: flex
+    flex: 1
+    align-items: center
+    justify-content: center
+    flex-direction: column
+    &-title
+      color: #ffffff
+      +font-sans-pro
+      font-size: 35px
+      letter-spacing: 10px        
+      text-transform: uppercase
+      padding-bottom: 43px      
+    &-description
+      +font-open-sans
+      font-size: 16px        
+      line-height: 28px
+      width: 604px
+      height: 45px
+      color: #ffffff
+      text-align: center
+      letter-spacing: 0.8px        
+  &-footer    
+    height: 112px
+    &-nav
+      display: flex
+      justify-content: center
+      &__link
+        width: 36px
+        height: 36px
+        display: flex
+        justify-content: center
+        align-items: center
+        font-size: 25px
+        color: #ffffff
+        background-color: #19bd9a
+        border-radius: 100%
+        border: 1px solid #19bd9a
+        cursor: pointer
+        transition: 0.3s
+        &:hover
+          opacity: 0.7
+          

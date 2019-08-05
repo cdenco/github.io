@@ -1,0 +1,49 @@
+html
+  box-sizing: content-box
+
+.container
+  max-width: 1140px
+  margin: 0 auto 
+
+.screen
+  &::after
+    position: absolute
+    left: 0
+    top: 0
+    width: 30px
+    height: 30px
+    line-height: 30px
+    text-align: center
+    background-color: white
+    content: 'xl'
+    border: 1px solid black
+    
+    
+
+@media (min-width: 992px) and (max-width: 1199.98px)
+  .screen
+    &::after
+      content: 'lg'
+  .container
+    max-width: 960px
+
+@media (min-width: 768px) and (max-width: 991.98px)
+  .screen
+    &::after
+      content: 'md'
+  .container
+    max-width: 720px
+
+@media (min-width: 576px) and (max-width: 767.98px)
+  .screen
+    &::after
+      content: 'sm'
+  .container
+    max-width: 540px
+
+@media (max-width: 575.98px)
+  .screen
+    &::after
+      content: '-'
+  .container
+    max-width: auto

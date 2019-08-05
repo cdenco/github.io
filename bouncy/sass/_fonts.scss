@@ -23,8 +23,7 @@
 
 [class^="pe-7s-"], [class*=" pe-7s-"] {
 	display: inline-block;
-	font-family: 'Pe-icon-7-stroke';
-	speak: none;
+	font-family: 'Pe-icon-7-stroke';	
 	font-style: normal;
 	font-weight: normal;
 	font-variant: normal;
@@ -642,3 +641,32 @@
 .pe-7s-airplay:before {
 	content: "\e67f";
 }
+
+@mixin font-big-john {
+	font-family: 'Big John';
+}
+  
+@mixin font-sans-pro {
+  font-family: 'Source Sans Pro';
+  font-weight: 300;
+  font-style: normal;
+}
+
+@mixin font-sans-pro-italic {
+	font-family: 'Source Sans Pro';
+  font-weight: 300;
+  font-style: italic;
+}  
+
+@mixin font-open-sans {
+	font-family: 'Open Sans';
+  font-weight: 400;
+  font-style: normal;
+}
+
+@mixin font-open-sans-bold {
+	font-family: 'Open Sans';
+  font-weight: 700;
+  font-style: normal;
+}
+ 
