@@ -21,6 +21,7 @@ html
     
 
 @media (min-width: 992px) and (max-width: 1199.98px)
+  // -lg-
   .screen
     &::after
       content: 'lg'
@@ -35,6 +36,7 @@ html
     max-width: 720px
 
 @media (min-width: 576px) and (max-width: 767.98px)
+  // -sm-
   .screen
     &::after
       content: 'sm'
@@ -42,8 +44,9 @@ html
     max-width: 540px
 
 @media (max-width: 575.98px)
+  // -mobile-
   .screen
     &::after
       content: '-'
   .container
-    max-width: auto
+   width: 95%
