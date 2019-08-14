@@ -846,7 +846,7 @@ html {
 }
 
 .screen::after {
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
   width: 30px;
@@ -897,7 +897,7 @@ html {
 /* Page styles */
 .main {
   background: #ffffff url(../img/main/main-bg.jpg) no-repeat top center;
-  height: 751px;
+  height: 737px;
 }
 
 .main .container {
@@ -1034,6 +1034,7 @@ html {
 .main-header-nav__btn > .main-header-nav__elem::after {
   display: block;
   position: absolute;
+  top: 52px;
   width: 26px;
   height: 2px;
   background-color: #ffffff;
@@ -1234,6 +1235,100 @@ html {
     font-style: normal;
     font-size: 14px;
     line-height: 22px;
+  }
+}
+
+.about .container {
+  background: #ffffff url(../img/about/ipad.png) no-repeat center right 155px;
+  padding-left: 96px;
+}
+
+.about-header__title {
+  font-family: 'Source Sans Pro';
+  font-weight: 300;
+  font-style: normal;
+  color: #333b46;
+  font-size: 20px;
+  line-height: 12px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin-top: 114px;
+  margin-bottom: 49px;
+}
+
+.about-content {
+  max-width: 466px;
+}
+
+.about-content__text {
+  font-family: 'Open Sans';
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 25px;
+  color: #81868e;
+  margin-bottom: 35px;
+}
+
+.about-footer__btn {
+  margin-bottom: 113px;
+  padding: 9px 24px;
+  border: 1px solid #333b46;
+  border-radius: 25px 25px 25px 25px;
+  background-color: transparent;
+  color: #333b46;
+  font-family: 'Open Sans';
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .about .container {
+    background: #ffffff url(../img/about/ipad.png) no-repeat center right 96px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .about .container {
+    padding-left: 45px;
+    background: #ffffff url(../img/about/ipad.png) no-repeat center right 30px;
+    background-size: 20%;
+  }
+  .about-content {
+    max-width: 400px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .about .container {
+    background: #ffffff;
+    padding-left: 0;
+    text-align: center;
+  }
+  .about-content {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .about .container {
+    background: #ffffff;
+    padding-left: 0;
+    text-align: center;
+  }
+  .about-header__title {
+    margin-top: 70px;
+    margin-bottom: 35px;
+  }
+  .about-content {
+    padding: 0 5px;
+  }
+  .about-content__text {
+    font-size: 14px;
+  }
+  .about-footer__btn {
+    margin-bottom: 70px;
   }
 }
 /*# sourceMappingURL=style.css.map */

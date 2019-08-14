@@ -1,0 +1,75 @@
+.about  
+  & .container    
+    background: #ffffff url(../img/about/ipad.png) no-repeat center right 155px 
+    padding-left: 96px
+
+  &-header
+    &__title
+      +page-h2
+      margin-top: 114px
+      margin-bottom: 49px
+
+  &-content
+    max-width: 466px
+    &__text
+      +page-text
+      margin-bottom: 35px
+
+  &-footer
+    &__btn
+      margin-bottom: 113px
+      padding: 9px 24px
+      border: 1px solid #333b46
+      border-radius: 25px 25px 25px 25px
+      background-color: transparent
+      color: #333b46      
+      +font-open-sans
+      font-size: 16px
+
+@media (min-width: 992px) and (max-width: 1199.98px)
+  // -lg-
+  .about
+    & .container    
+      background: #ffffff url(../img/about/ipad.png) no-repeat center right 96px
+
+@media (min-width: 768px) and (max-width: 991.98px)
+  // -md-
+  .about  
+    & .container
+      padding-left: 45px
+      background: #ffffff url(../img/about/ipad.png) no-repeat center right 30px
+      background-size: 20%
+    &-content
+      max-width: 400px
+
+@media (min-width: 576px) and (max-width: 767.98px)
+  // -sm-
+  .about  
+    & .container
+      background: #ffffff
+      padding-left: 0
+      text-align: center
+    &-content
+      margin: 0 auto
+
+@media (max-width: 575.98px)
+  // -mobile-
+  .about     
+    & .container
+      background: #ffffff
+      padding-left: 0
+      text-align: center
+    &-header
+      &__title
+        margin-top: 70px
+        margin-bottom: 35px
+    &-content
+      padding: 0 5px    
+      &__text
+        font-size: 14px
+    &-footer
+      &__btn
+        margin-bottom: 70px
+        
+        
+    
